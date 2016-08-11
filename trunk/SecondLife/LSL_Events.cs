@@ -72,7 +72,11 @@ namespace LSLEditor
 
 		public virtual void email(String sTime, String sAddress, String sSubject, String sBody, integer iRemaining) { }
 
-		public virtual void http_response(key kRequestID, integer iStatus, list lMetadata, String sBody) { }
+        public virtual void experience_permissions(key kAgent) { }
+
+        public virtual void experience_permissions_denied(key kAgent, integer iReason) { }
+
+        public virtual void http_response(key kRequestID, integer iStatus, list lMetadata, String sBody) { }
 
 		public virtual void http_request(key kRequestID, String sMethod, String sBody) { }
 
