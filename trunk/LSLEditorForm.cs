@@ -1205,9 +1205,9 @@ namespace LSLEditor
 		{
 			Browser browser = GetBrowser();
 			string strExeFileName = Path.GetFileName(Assembly.GetExecutingAssembly().CodeBase);
-			browser.ShowWebBrowser("Release notes", "res://" + strExeFileName + "/" + Properties.Settings.Default.ReleaseNotes);
+            browser.ShowWebBrowser("Release Notes", Properties.Settings.Default.ReleaseNotes);
 
-		}
+        }
 
 		void findForm_LocationChanged(object sender, EventArgs e)
 		{
@@ -1221,7 +1221,7 @@ namespace LSLEditor
 
 		private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
 		{
-			//TODO: Splitter moved? I Think this is depricated
+			//TODO: Splitter moved? I Think this is deprecated
 			//if( this.splitter1.SplitPosition>50)
 			//	Properties.Settings.Default.SimulatorSize = new Size(this.splitter1.Width, this.splitter1.SplitPosition);
 		}
@@ -1506,12 +1506,6 @@ namespace LSLEditor
 				OpenFile(strPath, Guid.NewGuid());
 				UpdateRecentFileList(strPath);
 			}
-		}
-
-		private void makeBugReporttoolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			BugReport.BugReportForm bugReport = new BugReport.BugReportForm(this);
-			bugReport.Show(this);
 		}
 
 		private void toolStripMenuItem4_Click(object sender, EventArgs e)

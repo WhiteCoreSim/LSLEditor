@@ -125,17 +125,6 @@
       <DependentUpon>About.cs</DependentUpon>
       <ExcludeFromStyleCop>false</ExcludeFromStyleCop>
     </Compile>
-    <Compile Include="BugReport\BugReportForm.cs">
-      <SubType>Form</SubType>
-      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="BugReport\BugReportForm.Designer.cs">
-      <DependentUpon>BugReportForm.cs</DependentUpon>
-      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="BugReport\UploadBugReport.cs">
-      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
-    </Compile>
     <Compile Include="BZip2Decompress\BZip2.cs">
       <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
     </Compile>
@@ -191,7 +180,6 @@
       <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
     </Compile>
     <Compile Include="Docking\DockPanel.cs">
-      <SubType>Component</SubType>
       <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
     </Compile>
     <Compile Include="Docking\DockPanel.DockDragHandler.cs">
@@ -761,19 +749,9 @@
       <DependentUpon>UpdateApplicationForm.cs</DependentUpon>
       <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
     </Compile>
-    <Compile Include="Web References\org.lsleditor.www\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
-    </Compile>
     <EmbeddedResource Include="Browser.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Browser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BugReport\BugReportForm.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>BugReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Docking\Resources.resx">
       <SubType>Designer</SubType>
@@ -961,7 +939,6 @@
     <Content Include="LSLEditor.rc" />
     <EmbeddedResource Include="Resource\ToolsOptions.xml" />
     <EmbeddedResource Include="Resource\thanks.gif" />
-    <None Include="Web References\org.lsleditor.www\Service1.disco" />
     <EmbeddedResource Include="Resource\About.htm" />
     <EmbeddedResource Include="Resource\ReleaseNotes.htm">
       <SubType>Designer</SubType>
@@ -1054,27 +1031,9 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Web References\org.lsleditor.www\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\org.lsleditor.www\Service1.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="Web References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebReferenceUrl Include="http://www.lsleditor.org/UploadBugReport/Service1.asmx">
-      <UrlBehavior>Static</UrlBehavior>
-      <RelPath>Web References\org.lsleditor.www\</RelPath>
-      <UpdateFromURL>http://www.lsleditor.org/UploadBugReport/Service1.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>LSLEditor_org_lsleditor_www_Service1</CachedSettingsPropName>
-    </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
