@@ -1,1 +1,10 @@
 # Binaries
+bin/
+
+# Building
+
+trunk/obj/
+
+# Visual Studio files
+
+trunk/.vs/
