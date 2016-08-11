@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59468D25-6E68-4113-B740-C6EF4695045B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>LSLEditor</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LSLEditor</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>LSLEditor.LSLEditorForm</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <Win32Resource>E:\Dev\SL\C#\lsleditor\official\trunk\LSLEditor.RES</Win32Resource>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/LSLEditor/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\lsl-editor-doc.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5CBB20152EC70EC13542B336790AF2E7AB2E1DEB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+      <ExcludeFromStyleCop>false</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="BugReport\BugReportForm.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="BugReport\BugReportForm.Designer.cs">
+      <DependentUpon>BugReportForm.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="BugReport\UploadBugReport.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="BZip2Decompress\BZip2.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="BZip2Decompress\BZip2Constants.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="BZip2Decompress\BZip2InputStream.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Decompressor\ZipEntry.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\AutoHideStripBase.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockAreasEditor.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockContent.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockContentCollection.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockContentEventArgs.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockContentHandler.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockOutlineBase.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPane.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPane.SplitterControl.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPaneCaptionBase.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPaneCollection.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPanel.AutoHideWindow.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPanel.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPanel.DockDragHandler.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPanel.DragHandler.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPanel.FocusManager.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPanel.MdiClientController.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPanel.Persistor.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPanel.SplitterDragHandler.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPanelExtender.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPanelSkin.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockPaneStripBase.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockWindow.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockWindow.SplitterControl.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DockWindowCollection.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DragForm.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\DummyControl.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Enums.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\FloatWindow.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\FloatWindowCollection.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Helpers\DockHelper.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Helpers\DrawHelper.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Helpers\ResourceHelper.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Helpers\Win32Helper.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\InertButtonBase.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Interfaces.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Localization.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Measures.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\NestedDockingStatus.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\NestedPaneCollection.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Resources.Designer.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\SplitterBase.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Strings.Designer.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\VisibleNestedPaneCollection.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\VS2005AutoHideStrip.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\VS2005DockPaneCaption.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\VS2005DockPaneStrip.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Win32\Enums.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Docking\Win32\NativeMethods.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\KeyWords.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <None Include="Editor\RoundCorners.cs" />
+    <Compile Include="Decompressor\Decompress.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\MsXsltContext.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\HTTPRequest.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\OutlineHelper.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\SendMyKeys.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\TextFileEncodingDetector.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="BZip2Decompress\IChecksum.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="llTextBoxForm.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="llTextBoxForm.Designer.cs">
+      <DependentUpon>llTextBoxForm.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Plugins\Generic.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SecondLife\LSL_Constants.cs" />
+    <Compile Include="SecondLife\LSL_Events.cs" />
+    <Compile Include="SecondLife\LSL_Functions.cs" />
+    <Compile Include="Solution\GuidProperty.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Solution\GuidProperty.Designer.cs">
+      <DependentUpon>GuidProperty.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\CodeCompletion.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\CompilerHelper.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\FileAssociator.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\GetTemplate.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\Measure.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\PrinterHelper.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\TaskQueue.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\XMLRPC.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\OopsFormatter.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Solution\NewProject.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Solution\NewProject.Designer.cs">
+      <DependentUpon>NewProject.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="PermissionsForm.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="PermissionsForm.Designer.cs">
+      <DependentUpon>PermissionsForm.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="GotoWindow.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="GotoWindow.Designer.cs">
+      <DependentUpon>GotoWindow.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\Numbered.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\Numbered.Designer.cs">
+      <DependentUpon>Numbered.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\TooltipWindow.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\TooltipWindow.designer.cs">
+      <DependentUpon>TooltipWindow.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\GListBox.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\GListBox.designer.cs">
+      <DependentUpon>GListBox.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\GListBoxWindow.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\GListBoxWindow.designer.cs">
+      <DependentUpon>GListBoxWindow.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\RichLabel.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\RichLabel.Designer.cs">
+      <DependentUpon>RichLabel.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="llDialogForm.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="llDialogForm.Designer.cs">
+      <DependentUpon>llDialogForm.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Plugins\LSLint.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Plugins\Particles.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Browser.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Browser.Designer.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\AutoFormatter.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="EditForm.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="FindWindow.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="FindWindow.Designer.cs">
+      <DependentUpon>FindWindow.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="LSLEditorForm.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="LSLEditorForm.Designer.cs">
+      <DependentUpon>LSLEditorForm.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\Settings.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\GroupboxEvent.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\LSL2CSharp.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\NumberedTextBoxUC.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\NumberedTextBoxUC.designer.cs">
+      <DependentUpon>NumberedTextBoxUC.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="RuntimeConsole.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="RuntimeConsole.Designer.cs">
+      <DependentUpon>RuntimeConsole.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SecondLife\SecondLifeHost.cs" />
+    <Compile Include="Helpers\SmtpClient.cs">
+      <SubType>Code</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SecondLife\Float.cs" />
+    <Compile Include="SecondLife\String.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SecondLife\list.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SecondLife\rotation.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SecondLife\key.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SecondLife\integer.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SecondLife\vector.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Editor\SyntaxRichTextBox.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\WebRequestClass.cs">
+      <SubType>Code</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="SecondLife\SecondLifeMain.cs">
+      <SubType>Code</SubType>
+      <ExcludeFromStyleCop>false</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\TabControlExtended.cs">
+      <SubType>Component</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Helpers\TabControlExtended.Designer.cs">
+      <DependentUpon>TabControlExtended.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SimulatorConsole.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SimulatorConsole.Designer.cs">
+      <DependentUpon>SimulatorConsole.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Solution\SolutionExplorer.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Solution\SolutionExplorer.designer.cs">
+      <DependentUpon>SolutionExplorer.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Solution\SvnAguments.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Solution\SvnAguments.Designer.cs">
+      <DependentUpon>SvnAguments.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Plugins\Svn.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="BZip2Decompress\StrangeCrc.cs">
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SyntaxError.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="SyntaxError.Designer.cs">
+      <DependentUpon>SyntaxError.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\EnvironmentPlugins.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\EnvironmentPlugins.Designer.cs">
+      <DependentUpon>EnvironmentPlugins.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\RuntimeGeneral.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\RuntimeGeneral.Designer.cs">
+      <DependentUpon>RuntimeGeneral.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\TextEditorCodeCompletion.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\TextEditorCodeCompletion.Designer.cs">
+      <DependentUpon>TextEditorCodeCompletion.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\EnvironmentBrowser.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\EnvironmentBrowser.Designer.cs">
+      <DependentUpon>EnvironmentBrowser.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\ProjectSettings.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\ProjectSettings.Designer.cs">
+      <DependentUpon>ProjectSettings.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\RuntimeInternal.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\RuntimeInternal.Designer.cs">
+      <DependentUpon>RuntimeInternal.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\RuntimeSmtp.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\RuntimeSmtp.Designer.cs">
+      <DependentUpon>RuntimeSmtp.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\RuntimeExternal.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\RuntimeExternal.Designer.cs">
+      <DependentUpon>RuntimeExternal.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\EnvironmentGeneral.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\EnvironmentGeneral.Designer.cs">
+      <DependentUpon>EnvironmentGeneral.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\TextEditorFontColors.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\TextEditorFontColors.Designer.cs">
+      <DependentUpon>TextEditorFontColors.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\EnvironmentHelp.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\EnvironmentHelp.Designer.cs">
+      <DependentUpon>EnvironmentHelp.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\TextEditorGeneral.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\TextEditorGeneral.Designer.cs">
+      <DependentUpon>TextEditorGeneral.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\ToolsOptions.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\ToolsOptions.Designer.cs">
+      <DependentUpon>ToolsOptions.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\VersionControlGeneral.cs">
+      <SubType>UserControl</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Tools\VersionControlGeneral.Designer.cs">
+      <DependentUpon>VersionControlGeneral.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ToolWindow.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ToolWindow.Designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="UpdateApplicationForm.cs">
+      <SubType>Form</SubType>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="UpdateApplicationForm.Designer.cs">
+      <DependentUpon>UpdateApplicationForm.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Web References\org.lsleditor.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <EmbeddedResource Include="Browser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Browser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BugReport\BugReportForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BugReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Strings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="llTextBoxForm.resx">
+      <DependentUpon>llTextBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solution\GuidProperty.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GuidProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solution\NewProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermissionsForm.resx">
+      <DependentUpon>PermissionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GotoWindow.resx">
+      <DependentUpon>GotoWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\TooltipWindow.resx">
+      <DependentUpon>TooltipWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\GListBoxWindow.resx">
+      <DependentUpon>GListBoxWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\RichLabel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RichLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="llDialogForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>llDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSLEditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LSLEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\NumberedTextBoxUC.resx">
+      <DependentUpon>NumberedTextBoxUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ConfLSL.xml">
+      <SubType>Code</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ConfCSharp.xml" />
+    <EmbeddedResource Include="Helpers\GroupboxEvent.resx">
+      <DependentUpon>GroupboxEvent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Class.gif" />
+    <EmbeddedResource Include="Images\Constants.gif" />
+    <EmbeddedResource Include="Images\Enum.gif" />
+    <EmbeddedResource Include="Images\Events.gif" />
+    <EmbeddedResource Include="Images\Functions.gif" />
+    <EmbeddedResource Include="Images\Namespace.gif" />
+    <EmbeddedResource Include="Images\Properties.gif" />
+    <EmbeddedResource Include="Images\SealedClass.gif" />
+    <EmbeddedResource Include="Images\Unknown.gif" />
+    <EmbeddedResource Include="RuntimeConsole.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RuntimeConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\SyntaxRichTextBox.resx">
+      <DependentUpon>SyntaxRichTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Close-Active.gif" />
+    <EmbeddedResource Include="Images\Close-Disabled.gif" />
+    <EmbeddedResource Include="Images\Close-Inactive.gif" />
+    <Content Include="App.ico" />
+    <Content Include="Docking\DockPanel.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_Bottom.bmp" />
+    <Content Include="Docking\Resources\Dockindicator_PaneDiamond_Fill.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_Hotspot.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_HotspotIndex.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_Left.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_Right.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_Top.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelBottom.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelBottom_Active.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelFill.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelFill_Active.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelLeft.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelLeft_Active.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelRight.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelRight_Active.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelTop.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelTop_Active.bmp" />
+    <Content Include="Docking\Resources\DockPane_AutoHide.bmp" />
+    <Content Include="Docking\Resources\DockPane_Close.bmp" />
+    <Content Include="Docking\Resources\DockPane_Dock.bmp" />
+    <Content Include="Docking\Resources\DockPane_Option.bmp" />
+    <Content Include="Docking\Resources\DockPane_OptionOverflow.bmp" />
+    <Content Include="Icons\ADDITEM.GIF" />
+    <Content Include="Icons\COPY.GIF" />
+    <Content Include="Icons\CUT.GIF" />
+    <Content Include="Icons\DEINDENT.GIF" />
+    <Content Include="Icons\DELETE.GIF" />
+    <Content Include="Icons\END.GIF" />
+    <Content Include="Icons\FIND.GIF" />
+    <Content Include="Icons\ININDENT.GIF" />
+    <Content Include="Icons\NEWDOC.GIF" />
+    <Content Include="Icons\NEWPROJ.GIF" />
+    <Content Include="Icons\OPEN.GIF" />
+    <Content Include="Icons\PASTE.GIF" />
+    <Content Include="Icons\PRINT.GIF" />
+    <Content Include="Icons\PROJECT.GIF" />
+    <Content Include="Icons\PROPS.GIF" />
+    <Content Include="Icons\REDO.GIF" />
+    <Content Include="Icons\SAVE.GIF" />
+    <Content Include="Icons\SAVEALL.GIF" />
+    <Content Include="Icons\SAVEAS.GIF" />
+    <Content Include="Icons\START.GIF" />
+    <Content Include="Icons\UNDO.GIF" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Animation.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Animations.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Body Parts.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Prim.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Calling Cards.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Clothes.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Eyes.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Folder.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Gesture.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Gestures.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Gloves.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Hair.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Inventory.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Jacket.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Landmark.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Landmarks.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Lost And Found.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Notecard.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Notecards.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Object.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Objects.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Pants.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Photo Album.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Project.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\question.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Script.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Scripts.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Shape.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Shirt.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Shoes.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Skin.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Skirt.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Snapshot.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Socks.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Solution.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Sound.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Sounds.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Texture.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Textures.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Trash.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Underpants.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Undershirt.gif" />
+    <EmbeddedResource Include="ImagesSolutionExplorer\Unknown.gif" />
+    <EmbeddedResource Include="Images\Vars.gif" />
+    <EmbeddedResource Include="Images\States.gif" />
+    <Content Include="Resource\App.ico" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="LSLEditor.rc" />
+    <EmbeddedResource Include="Resource\ToolsOptions.xml" />
+    <EmbeddedResource Include="Resource\thanks.gif" />
+    <None Include="Web References\org.lsleditor.www\Service1.disco" />
+    <EmbeddedResource Include="Resource\About.htm" />
+    <EmbeddedResource Include="Resource\ReleaseNotes.htm">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimulatorConsole.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimulatorConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solution\SolutionExplorer.resx">
+      <DependentUpon>SolutionExplorer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solution\SvnAguments.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SvnAguments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyntaxError.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SyntaxError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\EnvironmentPlugins.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnvironmentPlugins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\RuntimeGeneral.resx">
+      <DependentUpon>RuntimeGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\TextEditorCodeCompletion.resx">
+      <DependentUpon>TextEditorCodeCompletion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\EnvironmentBrowser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnvironmentBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\ProjectSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\RuntimeInternal.resx">
+      <DependentUpon>RuntimeInternal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\RuntimeSmtp.resx">
+      <DependentUpon>RuntimeSmtp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\RuntimeExternal.resx">
+      <DependentUpon>RuntimeExternal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\EnvironmentGeneral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnvironmentGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\TextEditorFontColors.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextEditorFontColors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\EnvironmentHelp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnvironmentHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\TextEditorGeneral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextEditorGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\ToolsOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ToolsOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\VersionControlGeneral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VersionControlGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolWindow.resx">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateApplicationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdateApplicationForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resource\app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\org.lsleditor.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\org.lsleditor.www\Service1.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.lsleditor.org/UploadBugReport/Service1.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\org.lsleditor.www\</RelPath>
+      <UpdateFromURL>http://www.lsleditor.org/UploadBugReport/Service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>LSLEditor_org_lsleditor_www_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>"$(FrameworkSDKDir)Bin\rc.exe" /r "$(ProjectDir)$(TargetName).rc"</PreBuildEvent>
+    <PostBuildEvent>$(SolutionDir)\..\build\AssemblyRevisionIncrementer.exe /t="$(SolutionDir)\Properties\AssemblyInfo.cs"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
