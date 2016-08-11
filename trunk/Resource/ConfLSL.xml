@@ -3429,6 +3429,21 @@
 			The remaining tells how many more emails are known as still pending.
 		</Word>
 
+		<Word name="experience_permissions" args="key agent_id">
+			experience_permissions(key agent_id);
+
+			The agent has approved an experience permissions request. This may be through interaction with the experience permission dialog or the experience profile, 
+			or automatically if the agent has previously approved the experience.
+		</Word>
+    
+		<Word name="experience_permissions_denied" args="key agent_id, integer reason">
+			experience_permissions_denied(key agent_id, integer reason);
+      
+			The agent has denied experience permission.
+						<Argument name="agent_id">Avatar UUID that denied permission.</Argument>
+						<Argument name="reason">Reason for denial; one of the Experience Tools XP_ERROR_* errors flags.</Argument>
+		</Word>
+    
 		<Word name="http_request" args="key request_id, string method, string body">
 			http_request(key request_id, string method, string body);
 
