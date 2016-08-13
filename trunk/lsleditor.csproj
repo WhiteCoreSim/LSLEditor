@@ -937,11 +937,6 @@
     <Content Include="Images\logo.gif" />
     <Content Include="LSLEditor.rc" />
     <EmbeddedResource Include="Resource\ToolsOptions.xml" />
-    <EmbeddedResource Include="Resource\thanks.gif" />
-    <EmbeddedResource Include="Resource\About.htm" />
-    <EmbeddedResource Include="Resource\ReleaseNotes.htm">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="SimulatorConsole.resx">
       <SubType>Designer</SubType>
       <DependentUpon>SimulatorConsole.cs</DependentUpon>
