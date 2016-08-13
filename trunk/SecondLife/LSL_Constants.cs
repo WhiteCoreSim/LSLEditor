@@ -91,7 +91,7 @@ namespace LSLEditor
 		public const int AGENT_AUTOPILOT = 0x2000;
 		public const int AGENT_BY_LEGACY_NAME = 0x1;
 		public const int AGENT_BY_USERNAME = 0x10;
-
+		
 		public const int AGENT_LIST_PARCEL = 0x01;
 		public const int AGENT_LIST_PARCEL_OWNER = 0x02;
 		public const int AGENT_LIST_REGION = 0x04;
@@ -130,7 +130,7 @@ namespace LSLEditor
 		public const int ATTACH_BELLY = 28;
 		public const int ATTACH_RPEC = 29;
 		public const int ATTACH_LPEC = 30;
-
+		// HUD attach positions
 		public const int ATTACH_HUD_CENTER_2 = 31;
 		public const int ATTACH_HUD_TOP_RIGHT = 32;
 		public const int ATTACH_HUD_TOP_CENTER = 33;
@@ -139,6 +139,22 @@ namespace LSLEditor
 		public const int ATTACH_HUD_BOTTOM_LEFT = 36;
 		public const int ATTACH_HUD_BOTTOM = 37;
 		public const int ATTACH_HUD_BOTTOM_RIGHT = 38;
+		// Project Bento Bones
+		public const int ATTACH_LHAND_RING1 = 41;
+		public const int ATTACH_RHAND_RING1 = 42;
+		public const int ATTACH_TAIL_BASE = 43;
+		public const int ATTACH_TAIL_TIP = 44;
+		public const int ATTACH_LWING = 45;
+		public const int ATTACH_RWING = 46;
+		public const int ATTACH_FACE_JAW = 47;
+		public const int ATTACH_FACE_LEAR = 48;
+		public const int ATTACH_FACE_REAR = 49;
+		public const int ATTACH_FACE_LEYE = 50;
+		public const int ATTACH_FACE_REYE = 51;
+		public const int ATTACH_FACE_TONGUE = 52;
+		public const int ATTACH_GROIN = 53;
+		public const int ATTACH_HIND_LFOOT = 54;
+		public const int ATTACH_HIND_RFOOT = 55;
 
 		public const int AVOID_NONE = 0;
 		public const int AVOID_CHARACTERS = 1;
@@ -748,6 +764,26 @@ namespace LSLEditor
 		public const int VEHICLE_TYPE_BALLOON = 5;
 
 		public const int VERTICAL = 0;
+
+		// Experience
+		public const int XP_ERROR_EXPERIENCES_DISABLED = 2;
+		public const int XP_ERROR_EXPERIENCE_DISABLED = 8;
+		public const int XP_ERROR_EXPERIENCE_SUSPENDED = 9;
+		public const int XP_ERROR_INVALID_EXPERIENCE = 7;
+		public const int XP_ERROR_INVALID_PARAMETERS = 3;
+		public const int XP_ERROR_KEY_NOT_FOUND = 14;
+		public const int XP_ERROR_MATURITY_EXCEEDED = 16;
+		public const int XP_ERROR_NONE = 0;
+		public const int XP_ERROR_NOT_FOUND = 6;
+		public const int XP_ERROR_NOT_PERMITTED = 4;
+		public const int XP_ERROR_NOT_PERMITTED_LAND = 17;
+		public const int XP_ERROR_NO_EXPERIENCE = 5;
+		public const int XP_ERROR_QUOTA_EXCEEDED = 11;
+		public const int XP_ERROR_RETRY_UPDATE = 15;
+		public const int XP_ERROR_STORAGE_EXCEPTION = 13;
+		public const int XP_ERROR_STORE_DISABLED = 12;
+		public const int XP_ERROR_THROTTLED = 1;
+		public const int XP_ERROR_UNKNOWN_ERROR = 10;		
 
 		public static readonly Float PI = 3.1415926535897932384626;
 		public static readonly Float TWO_PI = 2.0 * PI;
